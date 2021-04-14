@@ -46,4 +46,47 @@ header {
     opacity: 0;
     transition: opacity 2s; }
 
+main section.slider {
+  overflow: hidden; }
+  main section.slider .left-side-msg, main section.slider .right-side-msg {
+    transition: transform 1s; }
+  main section.slider .left-side-msg {
+    background-color: rgba(72, 123, 47, 0.5);
+    width: 80%;
+    border-radius: 120px;
+    height: 241px;
+    top: 30%;
+    left: -20%;
+    transform: translateX(-100%); }
+    main section.slider .left-side-msg p, main section.slider .left-side-msg h5 {
+      color: #fff;
+      padding: 30px 100px 0 0; }
+    main section.slider .left-side-msg p {
+      font-size: 40px; }
+    main section.slider .left-side-msg h5 {
+      font-size: 59px; }
+  main section.slider .right-side-msg {
+    background-color: rgba(0, 44, 122, 0.7);
+    width: 80%;
+    border-radius: 120px;
+    height: 90px;
+    top: 80%;
+    right: -20%;
+    transform: translateX(100%); }
+    main section.slider .right-side-msg p {
+      padding: 25px 0 0 50px;
+      color: #fff;
+      font-size: 22px; }
+    main section.slider .right-side-msg ul {
+      right: 30%;
+      top: 40px; }
+      main section.slider .right-side-msg ul li {
+        height: 10px;
+        width: 10px;
+        border: 1px solid #fff;
+        margin: 2px;
+        border-radius: 50%; }
+        main section.slider .right-side-msg ul li.active {
+          background-color: #fff; }
+
 /*# sourceMappingURL=style.css.map */
