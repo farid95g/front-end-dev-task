@@ -1,0 +1,72 @@
+header {
+  background-color: #487B2F;
+
+  section.ad, section.navbar {
+    height: 55px;
+
+    nav li {
+      text-transform: uppercase;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    &.ad {
+      border-bottom: .5px solid #FFFFFF;
+
+      nav ul li {
+        a {
+          color: #fff;
+        }
+      
+        select, input, select:focus, input:focus {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          text-transform: uppercase;
+          color: #fff;
+        }
+      
+        option {
+          background-color: var(--blue);
+        }
+      
+        input {
+          line-height: 55px;
+        }
+      
+        ::placeholder {
+          color: #fff;
+        }
+      
+        &.home {
+          img {
+            vertical-align: -2px;
+          }
+        }
+      
+        &.weather {
+          border-right: .5px solid #FFFFFF;
+          border-left: .5px solid #FFFFFF;
+        
+          img {
+            vertical-align: -5px;
+          }
+        }
+        &.lang {
+          border-right: .5px solid #FFFFFF;
+        }
+        span.current-weather {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  section.logo {
+    a {
+      display: inline-block;
+      transform: translateY(10px);
+    }
+  }
+}

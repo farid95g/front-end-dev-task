@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+a, a:hover {
+  text-decoration: none;
+  color: #fff; }
+
+header {
+  background-color: #487B2F; }
+  header section.ad, header section.navbar {
+    height: 55px; }
+    header section.ad nav li, header section.navbar nav li {
+      text-transform: uppercase;
+      padding: 0 20px;
+      display: flex;
+      align-items: center; }
+    header section.ad.ad, header section.navbar.ad {
+      border-bottom: .5px solid #FFFFFF; }
+      header section.ad.ad nav ul li a, header section.navbar.ad nav ul li a {
+        color: #fff; }
+      header section.ad.ad nav ul li select, header section.ad.ad nav ul li input, header section.ad.ad nav ul li select:focus, header section.ad.ad nav ul li input:focus, header section.navbar.ad nav ul li select, header section.navbar.ad nav ul li input, header section.navbar.ad nav ul li select:focus, header section.navbar.ad nav ul li input:focus {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        color: #fff; }
+      header section.ad.ad nav ul li option, header section.navbar.ad nav ul li option {
+        background-color: var(--blue); }
+      header section.ad.ad nav ul li input, header section.navbar.ad nav ul li input {
+        line-height: 55px; }
+      header section.ad.ad nav ul li ::placeholder, header section.navbar.ad nav ul li ::placeholder {
+        color: #fff; }
+      header section.ad.ad nav ul li.home img, header section.navbar.ad nav ul li.home img {
+        vertical-align: -2px; }
+      header section.ad.ad nav ul li.weather, header section.navbar.ad nav ul li.weather {
+        border-right: .5px solid #FFFFFF;
+        border-left: .5px solid #FFFFFF; }
+        header section.ad.ad nav ul li.weather img, header section.navbar.ad nav ul li.weather img {
+          vertical-align: -5px; }
+      header section.ad.ad nav ul li.lang, header section.navbar.ad nav ul li.lang {
+        border-right: .5px solid #FFFFFF; }
+      header section.ad.ad nav ul li span.current-weather, header section.navbar.ad nav ul li span.current-weather {
+        padding: 0 10px; }
+  header section.logo a {
+    display: inline-block;
+    transform: translateY(10px); }
+
+/*# sourceMappingURL=style.css.map */
