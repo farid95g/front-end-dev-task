@@ -72,6 +72,20 @@ header {
 
   section {
     transform: translateY(-500px);
-    transition: transform .75s;
+
+    &.animated {
+      animation-name: animated-header;
+      animation-duration: .75s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes animated-header {
+    from {
+      transform: translateY(-500px);
+    } to {
+      transform: translateY(0);
+    }
   }
 }

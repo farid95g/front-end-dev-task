@@ -6,7 +6,7 @@ fetch("https://api.weatherapi.com/v1/current.json?key=98e270f30e9243299f71842272
 
 // adding animation for the load event of document
 window.addEventListener("load", () => {
-  document.querySelectorAll("header section").forEach(section => section.style.transform = "translateY(0)");
-  document.querySelector(".left-side-msg").style.transform = "translateX(0)";
-  document.querySelector(".right-side-msg").style.transform = "translateX(0)";
+  document.querySelectorAll("header section").forEach(section => section.classList.add("animated"));
+  document.querySelector(".left-side-msg").classList.add("animated");
+  document.querySelector(".right-side-msg").classList.add("animated");
 })

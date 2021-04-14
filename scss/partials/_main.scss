@@ -26,6 +26,21 @@ main {
       h5 {
         font-size: 59px;
       }
+
+      @keyframes animated-slider-left {
+        from {
+          transform: translateX(-100%);
+        } to {
+          transform: translateX(0);
+        }
+      }
+
+      &.animated {
+        animation-name: animated-slider-left;
+        animation-duration: .75s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
     }
 
     .right-side-msg {
@@ -58,6 +73,21 @@ main {
             background-color: #fff;
           }
         }
+      }
+
+      @keyframes animated-slider-right {
+        from {
+          transform: translateX(100%);
+        } to {
+          transform: translateX(0);
+        }
+      }
+
+      &.animated {
+        animation-name: animated-slider-right;
+        animation-duration: .75s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
       }
     }
   }

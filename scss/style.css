@@ -43,9 +43,17 @@ header {
     display: inline-block;
     transform: translateY(10px); }
   header section {
-    transform: translateY(-500px);
-    transition: transform .75s; }
-
+    transform: translateY(-500px); }
+    header section.animated {
+      animation-name: animated-header;
+      animation-duration: .75s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; }
+@keyframes animated-header {
+  from {
+    transform: translateY(-500px); }
+  to {
+    transform: translateY(0); } }
 main section.slider {
   overflow: hidden; }
   main section.slider .left-side-msg, main section.slider .right-side-msg {
@@ -65,6 +73,16 @@ main section.slider {
       font-size: 40px; }
     main section.slider .left-side-msg h5 {
       font-size: 59px; }
+@keyframes animated-slider-left {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0); } }
+    main section.slider .left-side-msg.animated {
+      animation-name: animated-slider-left;
+      animation-duration: .75s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; }
   main section.slider .right-side-msg {
     background-color: rgba(0, 44, 122, 0.7);
     width: 80%;
@@ -88,5 +106,15 @@ main section.slider {
         border-radius: 50%; }
         main section.slider .right-side-msg ul li.active {
           background-color: #fff; }
+@keyframes animated-slider-right {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0); } }
+    main section.slider .right-side-msg.animated {
+      animation-name: animated-slider-right;
+      animation-duration: .75s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; }
 
 /*# sourceMappingURL=style.css.map */
