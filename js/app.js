@@ -5,7 +5,7 @@ fetch("https://api.weatherapi.com/v1/current.json?key=98e270f30e9243299f71842272
   .then(data => currentWeather.querySelector("span").textContent = data.current.temp_c);
 
 // adding animation for the load event of document
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   document.querySelectorAll("header section").forEach(section => section.style.transform = "translateY(0)");
   document.querySelector(".left-side-msg").style.transform = "translateX(0)";
   document.querySelector(".right-side-msg").style.transform = "translateX(0)";
