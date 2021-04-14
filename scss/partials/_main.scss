@@ -3,7 +3,7 @@ main {
     overflow: hidden;
 
     .left-side-msg, .right-side-msg {
-      transition: transform 1s;
+      transition: transform .75s;
     }
 
     .left-side-msg {

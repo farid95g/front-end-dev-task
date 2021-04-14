@@ -71,7 +71,7 @@ header {
   }
 
   section {
-    opacity: 0;
-    transition: opacity 2s;
+    transform: translateY(-500px);
+    transition: transform .75s;
   }
 }

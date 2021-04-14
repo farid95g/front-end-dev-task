@@ -43,13 +43,13 @@ header {
     display: inline-block;
     transform: translateY(10px); }
   header section {
-    opacity: 0;
-    transition: opacity 2s; }
+    transform: translateY(-500px);
+    transition: transform .75s; }
 
 main section.slider {
   overflow: hidden; }
   main section.slider .left-side-msg, main section.slider .right-side-msg {
-    transition: transform 1s; }
+    transition: transform .75s; }
   main section.slider .left-side-msg {
     background-color: rgba(72, 123, 47, 0.5);
     width: 80%;
