@@ -248,6 +248,41 @@ main section.partners .chevron-left {
   left: 50px; }
 main section.partners .chevron-right {
   right: 50px; }
+main section.stores {
+  background-color: #487B2F; }
+  main section.stores h3 {
+    color: #fff; }
+    main section.stores h3::before, main section.stores h3:after {
+      background-color: #fff; }
+  main section.stores .description p {
+    color: #fff;
+    font-size: 25px; }
+    main section.stores .description p strong {
+      text-transform: uppercase;
+      font-size: 28px; }
+  main section.stores .description label {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px; }
+  main section.stores .description select, main section.stores .description select:focus {
+    background-color: #fff;
+    border-radius: 26px;
+    width: 330px;
+    height: 50px;
+    padding: 0 27px;
+    outline: none; }
+  main section.stores svg path::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%; }
+  main section.stores .pins {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
 
 footer {
   background-color: #002C7A; }

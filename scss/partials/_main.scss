@@ -319,4 +319,61 @@ main {
       right: 50px;
     }
   }
+
+  section.stores {
+    background-color: #487B2F;
+
+    h3 {
+      color: #fff;
+
+      &::before, &:after {
+        background-color: #fff;
+      }
+    }
+
+    .description {
+      p {
+        color: #fff;
+        font-size: 25px;
+
+        strong {
+          text-transform: uppercase;
+          font-size: 28px;
+        }
+      }
+
+      label {
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+
+      select, select:focus {
+        background-color: #fff;
+        border-radius: 26px;
+        width: 330px;
+        height: 50px;
+        padding: 0 27px;
+        outline: none;
+      }
+    }
+
+    svg {
+      path::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+      }
+    }
+
+    .pins {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
 }
