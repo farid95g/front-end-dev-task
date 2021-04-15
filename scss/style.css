@@ -52,6 +52,21 @@ header {
     transform: translateY(-500px); }
   to {
     transform: translateY(0); } }
+main section h3 {
+  text-transform: uppercase;
+  color: #002C7A;
+  font-size: 22px;
+  letter-spacing: 2.2px; }
+  main section h3::before, main section h3::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: #002C7A;
+    vertical-align: 6px;
+    margin: 0 50px; }
+main section.article, main section.products {
+  background-color: #F5F5F5; }
 main section.slider {
   overflow: hidden; }
   main section.slider .left-side-msg, main section.slider .right-side-msg {
@@ -111,21 +126,7 @@ main section.slider {
   to {
     transform: translateX(0); } }
 main section.products {
-  height: 600px;
-  background-color: #F5F5F5; }
-  main section.products h3 {
-    text-transform: uppercase;
-    color: #002C7A;
-    font-size: 22px;
-    letter-spacing: 2.2px; }
-    main section.products h3::before, main section.products h3::after {
-      content: '';
-      display: inline-block;
-      width: 60px;
-      height: 1px;
-      background-color: #002C7A;
-      vertical-align: 6px;
-      margin: 0 50px; }
+  height: 600px; }
   main section.products .pro-wrapper .pro-img div {
     height: 334px !important;
     width: 334px !important;
@@ -144,6 +145,30 @@ main section.products {
     font: 25px;
     letter-spacing: 1.25px;
     font-weight: 700; }
+main section.article {
+  height: 640px; }
+  main section.article .left-article > div:last-child, main section.article .right-article > div > div:last-child {
+    width: 270px; }
+  main section.article .article-link {
+    color: #487B2F;
+    font-size: 16px;
+    text-decoration: underline; }
+  main section.article .article-content {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #363435; }
+  main section.article button.all-articles, main section.article button.all-articles:focus {
+    width: 172px;
+    height: 36px;
+    border: 1px solid #487B2F;
+    border-radius: 24px;
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: none;
+    color: #487B2F;
+    font-size: 12px;
+    right: 60px;
+    bottom: 45px; }
 
 footer {
   background-color: #002C7A; }
