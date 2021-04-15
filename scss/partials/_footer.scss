@@ -1,0 +1,23 @@
+footer {
+  background-color: #002C7A;
+
+  > section, > div {
+    padding: 0 130px !important;
+  }
+
+  li {
+    a {
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  p, span {
+    color: #fff;
+  }
+
+  hr {
+    background-color: #fff;
+  }
+}

@@ -71,14 +71,10 @@ header {
   }
 
   section {
-    transform: translateY(-500px);
-
-    &.animated {
-      animation-name: animated-header;
-      animation-duration: .75s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-    }
+    animation-name: animated-header;
+    animation-duration: .75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 
   @keyframes animated-header {

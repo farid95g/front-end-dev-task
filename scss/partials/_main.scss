@@ -13,7 +13,10 @@ main {
       height: 241px;
       top: 30%;
       left: -20%;
-      transform: translateX(-100%);
+      animation-name: animated-slider-left;
+      animation-duration: .75s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
 
       p, h5 {
         color: #fff;
@@ -34,13 +37,6 @@ main {
           transform: translateX(0);
         }
       }
-
-      &.animated {
-        animation-name: animated-slider-left;
-        animation-duration: .75s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
     }
 
     .right-side-msg {
@@ -50,7 +46,10 @@ main {
       height: 90px;
       top: 80%;
       right: -20%;
-      transform: translateX(100%);
+      animation-name: animated-slider-right;
+      animation-duration: .75s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
 
       p {
         padding: 25px 0 0 50px;
@@ -82,12 +81,54 @@ main {
           transform: translateX(0);
         }
       }
+    }
+  }
 
-      &.animated {
-        animation-name: animated-slider-right;
-        animation-duration: .75s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+  section.products {
+    height: 600px;
+    background-color: #F5F5F5;
+
+    h3 {
+      text-transform: uppercase;
+      color: #002C7A;
+      font-size: 22px;
+      letter-spacing: 2.2px;
+
+      &::before, &::after {
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 1px;
+        background-color: #002C7A;
+        vertical-align: 6px;
+        margin: 0 50px;
+      }
+    }
+    .pro-wrapper {
+      .pro-img {
+        div {
+          height: 334px !important;
+          width: 334px !important;
+          border: 1px solid #002C7A;
+        padding: 20px;
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      h5 {
+        text-transform: uppercase;
+        color: #002C7A;
+        font: 25px;
+        letter-spacing: 1.25px;
+        font-weight: 700;
       }
     }
   }
