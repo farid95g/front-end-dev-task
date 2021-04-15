@@ -54,7 +54,6 @@ header {
     transform: translateY(0); } }
 main section h3 {
   text-transform: uppercase;
-  color: #002C7A;
   font-size: 22px;
   letter-spacing: 2.2px; }
   main section h3::before, main section h3::after {
@@ -62,7 +61,6 @@ main section h3 {
     display: inline-block;
     width: 60px;
     height: 1px;
-    background-color: #002C7A;
     vertical-align: 6px;
     margin: 0 50px; }
 main section span.current-date {
@@ -140,6 +138,10 @@ main section.slider {
     transform: translateX(100%); }
   to {
     transform: translateX(0); } }
+main section.products h3 {
+  color: #002C7A; }
+  main section.products h3::before, main section.products h3::after {
+    background-color: #002C7A; }
 main section.products .pro-wrapper .pro-img div {
   height: 334px !important;
   width: 334px !important;
@@ -158,6 +160,10 @@ main section.products .pro-wrapper h5 {
   font: 25px;
   letter-spacing: 1.25px;
   font-weight: 700; }
+main section.article h3 {
+  color: #487B2F; }
+  main section.article h3::before, main section.article h3::after {
+    background-color: #487B2F; }
 main section.article .left-article > div:last-child, main section.article .right-article > div > div:last-child {
   width: 270px; }
 main section.article .article-link {
@@ -173,6 +179,10 @@ main section.article button.all-articles, main section.article button.all-articl
   bottom: 35px;
   border: 1px solid #487B2F;
   color: #487B2F; }
+main section.news h3 {
+  color: #002C7A; }
+  main section.news h3::before, main section.news h3::after {
+    background-color: #002C7A; }
 main section.news .news-pagination li {
   margin: 0 10px; }
 main section.news .single-news {
@@ -211,6 +221,18 @@ main section.news button.all-news, main section.news button.all-news:focus {
   bottom: 50px;
   border: 1px solid #002C7A;
   color: #002C7A; }
+main section.farmers {
+  background-color: #487B2F; }
+  main section.farmers h3 {
+    color: #fff; }
+    main section.farmers h3::before, main section.farmers h3::after {
+      background-color: #fff; }
+  main section.farmers .section-btn, main section.farmers .section-btn:focus {
+    border: 1px solid #5DA23B;
+    border-radius: 30px;
+    height: 66px;
+    color: #fff;
+    font-size: 16px; }
 
 footer {
   background-color: #002C7A; }

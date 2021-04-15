@@ -2,7 +2,6 @@ main {
   section {
     h3 {
       text-transform: uppercase;
-      color: #002C7A;
       font-size: 22px;
       letter-spacing: 2.2px;
 
@@ -11,7 +10,6 @@ main {
         display: inline-block;
         width: 60px;
         height: 1px;
-        background-color: #002C7A;
         vertical-align: 6px;
         margin: 0 50px;
       }
@@ -129,6 +127,14 @@ main {
   }
 
   section.products {
+    h3 {
+      color: #002C7A;
+
+      &::before, &::after {
+        background-color: #002C7A;
+      }
+    }
+
     .pro-wrapper {
       .pro-img {
         div {
@@ -159,6 +165,14 @@ main {
   }
 
   section.article {
+    h3 {
+      color: #487B2F;
+
+      &::before, &::after {
+        background-color: #487B2F;
+      }
+    }
+
     .left-article > div:last-child, .right-article > div > div:last-child {
       width: 270px;
     }
@@ -184,12 +198,20 @@ main {
   }
 
   section.news {
+    h3 {
+      color: #002C7A;
+
+      &::before, &::after {
+        background-color: #002C7A;
+      }
+    }
+
     .news-pagination {
       li {
         margin: 0 10px;
       }
     }
-    
+
     .single-news {
       width: 250px;
 
@@ -245,6 +267,25 @@ main {
       bottom: 50px;
       border: 1px solid #002C7A;
       color: #002C7A;
+    }
+  }
+
+  section.farmers {
+    background-color: #487B2F;
+    h3 {
+      color: #fff;
+
+      &::before, &::after {
+        background-color: #fff;
+      }
+    }
+
+    .section-btn, .section-btn:focus {
+      border: 1px solid #5DA23B;
+      border-radius: 30px;
+      height: 66px;
+      color: #fff;
+      font-size: 16px;
     }
   }
 }
