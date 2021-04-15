@@ -17,6 +17,27 @@ main {
       }
     }
 
+    span.current-date {
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      color: #7B7B7B;
+    }
+
+    button.section-btn, button.section-btn:focus {
+      width: 172px;
+      height: 36px;
+      border-radius: 24px;
+      text-transform: uppercase;
+      background-color: transparent;
+      outline: none;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    &.article, &.products, &.news {
+      padding: 100px 0;
+    }
+
     &.article, &.products {
       background-color: #F5F5F5;
     }
@@ -108,8 +129,6 @@ main {
   }
 
   section.products {
-    height: 600px;
-
     .pro-wrapper {
       .pro-img {
         div {
@@ -140,8 +159,6 @@ main {
   }
 
   section.article {
-    height: 640px;
-
     .left-article > div:last-child, .right-article > div > div:last-child {
       width: 270px;
     }
@@ -159,17 +176,75 @@ main {
     }
 
     button.all-articles, button.all-articles:focus {
-      width: 172px;
-      height: 36px;
-      border: 1px solid #487B2F;
-      border-radius: 24px;
-      text-transform: uppercase;
-      background-color: transparent;
-      outline: none;
-      color: #487B2F;
-      font-size: 12px;
       right: 60px;
-      bottom: 45px;
+      bottom: 35px;
+      border: 1px solid #487B2F;
+      color: #487B2F;
+    }
+  }
+
+  section.news {
+    .news-pagination {
+      li {
+        margin: 0 10px;
+      }
+    }
+    
+    .single-news {
+      width: 250px;
+
+      .news-image {
+        width: 100%;
+        height: 315px;
+        img:first-child {
+          height: 100%;
+          width: 100%;
+        }
+
+        .hover-effect {
+          width: 160px;
+          height: 270px;
+          left: 45px;
+          top: 22.5px;
+          transform: scale(0);
+          transition: transform .4s;
+          cursor: pointer;
+
+          .zoom {
+            width: 32px;
+            height: 32px;
+            left: 64px;
+            top: 119px;
+          }
+        }
+
+        &:hover .hover-effect {
+          transform: scale(1);
+        }
+      }
+
+      .news-content {
+        .news-title {
+          a {
+            letter-spacing: 0.7px;
+            color: #002C7A;
+            font-size: 14px;
+          }
+        }
+  
+        p {
+          letter-spacing: 0.6px;
+          color: #363435;
+          font-size: 12px;
+        }
+      }
+    }
+
+    button.all-news, button.all-news:focus {
+      left: calc(50% - 86px);
+      bottom: 50px;
+      border: 1px solid #002C7A;
+      color: #002C7A;
     }
   }
 }
