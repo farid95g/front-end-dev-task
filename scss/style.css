@@ -76,7 +76,7 @@ main section button.section-btn, main section button.section-btn:focus {
   outline: none;
   font-size: 12px;
   font-weight: 600; }
-main section.article, main section.products, main section.news {
+main section.article, main section.products, main section.news, main section.partners {
   padding: 100px 0; }
 main section.article, main section.products {
   background-color: #F5F5F5; }
@@ -233,6 +233,21 @@ main section.farmers {
     height: 66px;
     color: #fff;
     font-size: 16px; }
+main section.partners h3 {
+  color: #002C7A; }
+  main section.partners h3::before, main section.partners h3:after {
+    background-color: #002C7A; }
+main section.partners .partner-logo {
+  width: 200px;
+  height: 40px; }
+  main section.partners .partner-logo img {
+    width: 100%; }
+main section.partners span {
+  top: 52%; }
+main section.partners .chevron-left {
+  left: 50px; }
+main section.partners .chevron-right {
+  right: 50px; }
 
 footer {
   background-color: #002C7A; }
