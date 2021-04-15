@@ -11,6 +11,22 @@ footer {
       font-size: 12px;
       letter-spacing: 1.2px;
     }
+
+    &.contact-means {
+      a {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:nth-child(2) {
+          margin: 0 10px;
+        }
+      }
+    }
   }
 
   p, span {
